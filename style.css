@@ -1,0 +1,168 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+   
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+ 
+  body {
+    margin: 0 auto;
+    font-size: 10px;
+    background-color: azure;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  @font-face {
+    font-family: 'BentonSans-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('BentonSans-Regular'), url('BentonSans-Regular.woff') format('woff');
+  }
+
+  section, aside {
+    font-family: 'BentonSans-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('BentonSans-Regular'), url('BentonSans-Regular.woff') format('woff');
+  }
+
+  header, footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #0033a0;
+    color: azure;
+    border-top: 5px solid #b1b3b3;
+    border-bottom: 5px solid #b1b3b3;
+    text-align: center;
+    }
+
+  header {
+   padding: 15px;
+   font-size: 1.5rem;
+   margin: 0;
+  }
+
+  footer {
+  padding: 10px;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 1400px;
+  }
+  
+  nav {
+    padding: 10px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #0033a0;
+    color: azure;
+    border-bottom: 5px solid #b1b3b3;
+  }
+
+  nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+
+  nav li {
+    float: left;
+  }
+
+  nav li a {
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: auto;
+    font-size: 1.5em;
+  }
+
+  section {
+    float: left;
+    width: 75%;
+    margin: auto;
+  }
+  aside {
+    float: left;
+    width: 25%;
+  }
+
+nav li a:hover:not(.active) {
+  background-color: #b1b3b3;
+  color: black;
+  }
+  
+   section a:link {
+    color: purple;
+  }
+  section a:visited {
+    color: #0033a0;
+  }
+  section a:hover {
+    text-decoration: none;
+  }
+  section a:active {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  aside a:link {
+    color: purple;
+  }
+  aside a:visited {
+    color: #0033a0;
+  }
+  aside a:hover {
+    text-decoration: none;
+  }
+  aside a:active {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  ul {
+    list-style-type: disc;
+  }
+
+
+
+ 
