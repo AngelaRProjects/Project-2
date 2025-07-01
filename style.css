@@ -42,14 +42,18 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
  
   body {
     margin: 0 auto;
     font-size: 10px;
-    background-color: azure;
-    min-width: 1000px;
-    max-width: 1400px;
+    background-color: lab(90.24% 0 -0.01);
   }
+
   @font-face {
     font-family: 'BentonSans-Regular';
     font-style: normal;
@@ -64,10 +68,41 @@
     src: local('BentonSans-Regular'), url('BentonSans-Regular.woff') format('woff');
   }
 
+  h2  {
+      padding: 20px;
+      margin-left: 0, auto;
+      margin-right: 0, auto;
+  }
+
+  section p {
+    margin-left: 20px;
+  }
+
+  section ol, ul {
+    padding: 10px;  
+    margin-left: 40px;
+  }
+  
+  aside h2 {
+    padding: 15px;
+      margin-left: 0, auto;
+      margin-right: 0, auto;
+  }
+  aside ul {
+    margin-top: 0;  
+    margin-left: 50px;
+    margin-right: 0, auto;
+  }
+
+  aside p {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 0, auto;
+  }
   header, footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #0033a0;
-    color: azure;
+    color: lab(90.24% 0 -0.01);
     border-top: 5px solid #b1b3b3;
     border-bottom: 5px solid #b1b3b3;
     text-align: center;
@@ -92,8 +127,8 @@
     padding: 10px;
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
     background-color: #0033a0;
-    color: azure;
     border-bottom: 5px solid #b1b3b3;
   }
 
@@ -110,7 +145,7 @@
 
   nav li a {
     display: block;
-    color: azure;
+    color: lab(90.24% 0 -0.01);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
