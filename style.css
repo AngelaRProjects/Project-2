@@ -52,6 +52,8 @@
     margin: 0 auto;
     font-size: 10px;
     background-color: lab(90.24% 0 -0.01);
+    min-width: 1000px;
+    max-width: 2000px;
   }
 
   @font-face {
@@ -102,7 +104,7 @@
   header, footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #0033a0;
-    color: lab(90.24% 0 -0.01);
+    color: whitesmoke;
     border-top: 5px solid #b1b3b3;
     border-bottom: 5px solid #b1b3b3;
     text-align: center;
@@ -120,7 +122,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  max-width: 1400px;
+  max-width: 2000px;
   }
   
   nav {
@@ -145,7 +147,7 @@
 
   nav li a {
     display: block;
-    color: lab(90.24% 0 -0.01);
+    color: whitesmoke;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
