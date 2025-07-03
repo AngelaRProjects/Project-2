@@ -50,7 +50,7 @@
  
   body {
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 12px;
     background-color: lab(90.24% 0 -0.01);
     min-width: 1000px;
     max-width: 2000px;
@@ -70,6 +70,31 @@
     src: local('BentonSans-Regular'), url('BentonSans-Regular.woff') format('woff');
   }
 
+   header, footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #0033a0;
+    color: whitesmoke;
+    border-top: 5px solid #b1b3b3;
+    border-bottom: 5px solid #b1b3b3;
+    text-align: center;
+    }
+
+  header {
+   padding: 40px;
+   font-size: 1.5rem;
+   margin: 0;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 1000px;
+    max-width: 2000px;
+  }
+ 
   h2  {
       padding: 20px;
       margin-left: 0, auto;
@@ -101,32 +126,9 @@
     margin-left: 10px;
     margin-right: 0, auto;
   }
-  header, footer {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #0033a0;
-    color: whitesmoke;
-    border-top: 5px solid #b1b3b3;
-    border-bottom: 5px solid #b1b3b3;
-    text-align: center;
-    }
-
-  header {
-   padding: 15px;
-   font-size: 1.5rem;
-   margin: 0;
-  }
-
-  footer {
-  padding: 10px;
-  font-size: 1rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  max-width: 2000px;
-  }
-  
+   
   nav {
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
@@ -194,12 +196,22 @@ nav li a:hover:not(.active) {
   }
   aside a:active {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
   }
   ul {
     list-style-type: disc;
   }
 
+@media screen and (max-width: 800px) {
+  section, aside, header, footer {   
+    width: 100%;
+    padding: 0;
+  }
+}
 
-
- 
+@media screen and (max-width: 400px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
